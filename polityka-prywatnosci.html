@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polityka prywatności – Anty Smog</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1c2430;
+      --muted: #5b6573;
+      --accent: #0f9d8a;
+      --border: #e2e6ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111a22;
+        --card: #18232f;
+        --text: #e8edf2;
+        --muted: #9aa6b2;
+        --accent: #1de9b6;
+        --border: #263444;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+    }
+    h1 { font-size: 1.7rem; margin: 0 0 4px; }
+    h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+    p, li { color: var(--text); }
+    .updated { color: var(--muted); margin: 0 0 24px; }
+    .summary {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+    .summary ul { margin: 8px 0 0; padding-left: 20px; }
+    a { color: var(--accent); }
+    ul { padding-left: 22px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Polityka prywatności aplikacji Anty Smog</h1>
+  <p class="updated">Obowiązuje od 27 października 2026 r.</p>
+
+  <div class="summary">
+    <strong>W skrócie</strong>
+    <ul>
+      <li>Aplikacja nie wymaga konta i nie wysyła twórcy żadnych Twoich danych.</li>
+      <li>Nie ma reklam, analityki ani śledzenia.</li>
+      <li>Ulubione stacje i ustawienia są zapisane tylko na Twoim telefonie.</li>
+      <li>Lokalizacja jest używana tylko na telefonie, żeby pokazać Twoją pozycję na mapie.</li>
+      <li>Mapę dostarcza Google, które samo zbiera część danych technicznych (opis niżej).</li>
+    </ul>
+  </div>
+
+  <h2>1. Administrator danych</h2>
+  <p>
+    Twórcą aplikacji Anty Smog jest Rafał Jeroś. W sprawach dotyczących prywatności
+    możesz napisać na adres <a href="mailto:dev.software15@gmail.com">dev.software15@gmail.com</a>.
+  </p>
+
+  <h2>2. Lokalizacja</h2>
+  <p>
+    Aplikacja prosi o dostęp do lokalizacji tylko po to, żeby po naciśnięciu przycisku
+    lokalizacji przesunąć mapę do miejsca, w którym jesteś, i pokazać Twoją pozycję.
+    Zgoda jest dobrowolna: bez niej aplikacja działa normalnie, a mapę przesuwasz ręcznie.
+  </p>
+  <p>
+    Twoja lokalizacja nie jest wysyłana do twórcy aplikacji ani nigdzie przez nią zapisywana.
+    Na telefonie zapamiętywany jest jedynie ostatni widok mapy, żeby po ponownym
+    uruchomieniu otworzyła się w tym samym miejscu.
+  </p>
+
+  <h2>3. Powiadomienia</h2>
+  <p>
+    Jeśli włączysz powiadomienia, aplikacja mniej więcej raz na godzinę pobiera w tle
+    aktualne dane o jakości powietrza dla wybranych przez Ciebie stacji i sama, na telefonie,
+    sprawdza, czy powinna Cię powiadomić. Do tego potrzebuje zgody na wyświetlanie
+    powiadomień, którą możesz w każdej chwili wycofać w ustawieniach telefonu.
+  </p>
+
+  <h2>4. Dane zapisane na telefonie</h2>
+  <p>Na Twoim urządzeniu, w pamięci aplikacji, zapisywane są:</p>
+  <ul>
+    <li>ulubione stacje i stacja wybrana dla widżetu,</li>
+    <li>stacje z włączonymi powiadomieniami i ostatnio zgłoszony poziom jakości powietrza,</li>
+    <li>ustawienia: motyw, norma (GIOŚ lub WHO), cisza nocna,</li>
+    <li>ostatni widok mapy.</li>
+  </ul>
+  <p>
+    Te dane nie opuszczają telefonu. Usuniesz je, czyszcząc dane aplikacji w ustawieniach
+    telefonu albo odinstalowując aplikację.
+  </p>
+
+  <h2>5. Skąd pochodzą dane o jakości powietrza</h2>
+  <p>
+    Pomiary pochodzą z otwartych danych Edukacyjnej Sieci Antysmogowej (NASK)
+    i Głównego Inspektoratu Ochrony Środowiska (GIOŚ). Aplikacja nie łączy się z nimi
+    bezpośrednio, tylko pobiera przygotowane pliki z serwisu GitHub Pages
+    (<code>rafal-j2.github.io</code>). Jak przy każdym połączeniu internetowym, serwer
+    GitHub otrzymuje przy tym adres IP i podstawowe informacje techniczne o zapytaniu.
+    Aplikacja nie wysyła w tych zapytaniach żadnych Twoich danych, a twórca nie ma dostępu
+    do dzienników serwera. Zasady przetwarzania danych przez GitHub opisuje
+    <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">polityka prywatności GitHub</a>.
+  </p>
+
+  <h2>6. Mapa Google</h2>
+  <p>
+    Mapa w aplikacji to usługa Google Maps dostarczana przez Google. Podczas jej
+    używania Google automatycznie zbiera dane techniczne:
+  </p>
+  <ul>
+    <li>informacje o urządzeniu (model, producent, wersja systemu) i wersji modułu mapy,</li>
+    <li>raporty awarii modułu mapy,</li>
+    <li>adres IP,</li>
+    <li>pseudonimowy identyfikator modułu mapy,</li>
+    <li>informacje o przesuwaniu i powiększaniu mapy.</li>
+  </ul>
+  <p>
+    Google wykorzystuje te dane do utrzymania i ulepszania swoich usług. Twórca aplikacji
+    nie ma do nich dostępu. Szczegóły opisują
+    <a href="https://policies.google.com/privacy?hl=pl">polityka prywatności Google</a>
+    oraz <a href="https://maps.google.com/help/terms_maps/?hl=pl">warunki korzystania z Map Google</a>.
+  </p>
+
+  <h2>7. Twoje prawa</h2>
+  <p>
+    Zgodnie z RODO masz prawo do dostępu do swoich danych, ich sprostowania, usunięcia,
+    ograniczenia przetwarzania, przenoszenia oraz do sprzeciwu wobec przetwarzania.
+    Ponieważ twórca aplikacji nie przechowuje żadnych Twoich danych, w sprawie danych
+    zebranych przez Google lub GitHub skontaktuj się bezpośrednio z tymi firmami.
+    Masz też prawo złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych
+    (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).
+  </p>
+
+  <h2>8. Dzieci</h2>
+  <p>
+    Aplikacja nie jest skierowana specjalnie do dzieci i nie zbiera świadomie danych
+    osób poniżej 16. roku życia.
+  </p>
+
+  <h2>9. Zmiany polityki</h2>
+  <p>
+    Jeśli aplikacja zacznie inaczej korzystać z danych, ta strona zostanie zaktualizowana,
+    a nowa data pojawi się na górze.
+  </p>
+</main>
+</body>
+</html>
